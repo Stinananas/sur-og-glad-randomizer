@@ -1,6 +1,6 @@
 // Get a random element from an array
-//String[] mood = { "Happy", "Angery" };
-//int index = int(random(mood.length));  // Same as int(random(2))
+String[] mood = { "Happy", "Angery" };
+int index = int(random(mood.length));  // Same as int(random(2))
 
 
 void setup()
@@ -14,8 +14,7 @@ void setup()
 
 void draw()
 {
-  //if (random(mood=="happy")
-
+ //<>//
     strokeWeight(0); // typelse af pensel
   //line(0,300,800,300); // x-akse
   //line(400,0,400,600); // y-akse
@@ -39,5 +38,17 @@ void draw()
   circle(280, 340, 100); //eyeshine nederst i venstre øje
   circle(580, 340, 100); //eyeshine nederst i højre øje
 
-  arc(400, 385, 80, 80, 0, 3.1, 180); //smil
+  fill(00); // sort farve
+
+// Hej Stina, her er lige et par linjer koder
+  if (mood[index]=="Happy"){
+    arc(400, 385, 80, 80, 0, 3.1, 180); //smil
+  }
+  else
+  {
+    arc(400, 385, 80, 80, PI, 3.1, 180); //sur
+  }
+    fill(255,255,255); // hvid farve
+
+  
 }
