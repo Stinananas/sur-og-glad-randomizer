@@ -2,15 +2,10 @@
 String[] mood = { "Happy", "Angery" };
 int index = int(random(mood.length));  // Same as int(random(2))
 
-
 void setup()
 {
   size(800, 600);
-  //noLoop();
 }
-
-
-
 
 void draw()
 {
@@ -38,17 +33,15 @@ void draw()
   circle(280, 340, 100); //eyeshine nederst i venstre øje
   circle(580, 340, 100); //eyeshine nederst i højre øje
 
-  fill(00); // sort farve
+  fill(0); // sort farve
 
-// Hej Stina, her er lige et par linjer koder
-  if (mood[index]=="Happy"){
-    arc(400, 385, 80, 80, 0, 3.1, 180); //smil
+
+  if (mood[index]=="Happy"){ //<>//
+    arc(400, 385, 80, 80, 0, PI); //smil
+
   }
-  else
-  {
-    arc(400, 385, 80, 80, PI, 3.1, 180); //sur
+  else if (mood[index]=="Angery"){
+    arc(400, 425, 80, 80, PI, TWO_PI); //sur
   }
     fill(255,255,255); // hvid farve
-
-  
 }
